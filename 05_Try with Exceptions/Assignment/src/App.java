@@ -14,6 +14,7 @@ public class App {
             try {
                 try {
                     number1Int = Integer.parseInt(number1);
+
                 } catch (Exception ex) {
                     number1Int = 0;
                     throw new IntegerException("number1 is not an int");
