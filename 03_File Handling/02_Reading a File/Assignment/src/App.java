@@ -3,7 +3,7 @@ import java.io.FileReader;
 
 public class App {
     public static void main(String[] args) throws Exception {
-        String fileName = "src/file.txt";
+        String fileName = "Assignment/src/file.txt";
 
         BufferedReader reader = new BufferedReader(new FileReader(fileName));
         System.out.println(reader.readLine());
