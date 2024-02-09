@@ -10,4 +10,5 @@ public class App {
 
         System.out.println(subtract5times5.apply(testNum));
     }
+
 }
