@@ -9,7 +9,7 @@ public class SqrtRunnable  implements Runnable{
 
     @Override
     public void run() {
-        System.out.print(Math.sqrt(num));
+        System.out.println("sqrt of " + num + " equals " + Math.sqrt(num));
     }
 
     public void start() {
