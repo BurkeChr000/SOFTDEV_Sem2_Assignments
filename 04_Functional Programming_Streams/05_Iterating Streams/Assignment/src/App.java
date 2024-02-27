@@ -15,12 +15,13 @@ public class App {
         //TODO:  use foreach to print intsPlus5Div2
 
         List<Integer> ints = IntStream.rangeClosed(0, 10).boxed().toList();
-        Function<Integer, Integer> add5Func = (number) -> number;  //TODO:  acutally implement the lambda correctly
-
+        Function<Integer, Integer> add5Func = (number) -> number + 5;  //TODO:  acutally implement the lambda correctly
+        Function<Integer, Integer> div2 = (n) -> n/2;
         List<Integer> intsPlus5 = ints.stream().map(add5Func).toList();
-
+        List<Integer> intsPlus5Div2 = intsPlus5.stream().map(div2).toList();
         Consumer<Integer> intPrinter = (number) -> System.out.println(number);
         intsPlus5.stream().forEach(intPrinter);
+        intsPlus5Div2.stream().forEach(intPrinter);
 
         //TODO:  write a div2Func Function like I did with add5Func
         //TODO:  apply div2Func to intsPlus5 with map
